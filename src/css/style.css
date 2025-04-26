@@ -152,26 +152,6 @@ a:hover {
   border-right: 13px solid transparent;
 }
 
-/* Utility styles */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-svg {
-  background-color: var(--bs-black);
-  fill: white;
-}
-
 /* Global navbar styling */
 
 .global-header {
@@ -215,6 +195,11 @@ svg {
   align-items: center;
   text-transform: uppercase;
   border-left: 1px solid var(--bs-grey-5);
+}
+
+/* Park header */
+
+#park-header {
 }
 
 /* Hero Banner */
@@ -281,3 +266,27 @@ svg {
   width: 24px;
   height: 24px;
 }
+
+/* Utility styles */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.disclaimer {
+  padding: 0 1em;
+}
+
+/* svg {
+  background-color: var(--bs-black);
+  fill: white;
+} */
