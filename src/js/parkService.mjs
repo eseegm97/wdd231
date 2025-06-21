@@ -178,7 +178,6 @@ const park = {
   name: "Yellowstone",
   designation: "National Park"
 };
-
 const parkInfoLinks = [
   {
     name: "Current Conditions &#x203A;",
@@ -222,11 +221,22 @@ async function getJson(url) {
 export function getInfoLinks(data) {
   const withUpdatedImages = parkInfoLinks.map((item, index) => {
     item.image = data[index + 2].url;
+    return item;
   });
   return withUpdatedImages;
 }
 
 export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=yell");
-  return getParkData.data[0];
+  const parkData = await getJson("parks?parkCode=yell ");
+  return parkData.data[0];
+}
+
+export async function getParkAlerts(code) {
+  const parkData = await getJson(`alerts?parkCode=${code}`);
+  return parkData.data;
+}
+
+export async function getParkVisitorCenters(code) {
+  const parkData = await getJson(`visitorcenters?parkCode=${code}`);
+  return parkData.data;
 }
