@@ -1,4 +1,3 @@
-/* Skip links styling */
   .skip-links ul {
     list-style-type: none;
     margin: 0;
@@ -18,8 +17,6 @@
     top: 2px;
     z-index: 9999;
   }
-  
-  /* Media card styles */
   
   .media-card a {
     text-decoration: none;

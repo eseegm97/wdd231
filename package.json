@@ -6,8 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build --emptyOutDir",
-    "preview": "vite preview",
-    "lint": "eslint *.js src/**/*.js"
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
